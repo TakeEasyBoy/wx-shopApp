@@ -1,0 +1,28 @@
+/**app.wxss**/
+page{
+  font-size: 14px;
+  color: #333;
+  background: #eee;
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/** 公共样式**/
+.margintop10{
+  margin-top: 10px;
+}
+.card{
+  background-color:#fefefe;
+}
+.sales-img{
+  width: 60px;
+  height: 60px;
+}
+

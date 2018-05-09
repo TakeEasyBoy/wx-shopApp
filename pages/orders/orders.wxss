@@ -1,0 +1,52 @@
+/* pages/orders/orders.wxss */
+.good-item{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #eee; 
+  margin-bottom: 5px;
+}
+.item-img{
+  height:80px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.good-item-text{
+  margin-left: 20px;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+}
+.item-title,.item-num{
+  height: 30px;
+  line-height: 30px;
+}
+
+.item-num{
+  color:red;
+}
+.item-price{
+  color:#333;
+}
+.good-item-add{
+  margin-left: 5px;
+  width: 25%;
+  display: flex;
+   justify-content: flex-end; 
+  align-items: center;
+  border-left: 1px solid #eee;
+  padding: 10px;
+}
+.input-num,.decade-icon,.add-icon{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.add-icon{
+  background-color: #fdb900;
+}

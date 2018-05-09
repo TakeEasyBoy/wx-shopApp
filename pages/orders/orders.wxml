@@ -1,0 +1,19 @@
+<!--pages/orders/orders.wxml-->
+<view class="margintop10 card">
+  <view class="good-item" wx:key="{{id}}" wx:for-index="idx" wx:for="{{itemData}}">
+   <view class="item-img">
+     <image class="sales-img" src='/images/icon-1.png'></image>
+   </view>
+    <view class="good-item-text">
+      <text class="item-title">{{item.name}}</text>
+      <text class="item-title-notice">{{item.subname}}</text>
+      <text class="item-num">{{item.price}}元<text class="item-price">/{{item.format}}</text> </text>      
+    </view>
+    <view class="good-item-add">
+       <view class="decade-icon" data-index="{{idx}}" bindtap='decade'>-</view> 
+        <input class="input-num" data-index="{{idx}}" type="number" value="{{numbers[idx]}}" bindinput="bindKeyInput" />  
+      <view class="add-icon" data-index="{{idx}}" bindtap='add'>+</view>
+    </view>
+  </view>
+</view>
+<view>{{totalprice}}</view>

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="containor"></view>
+<view class='notice'>
+  <text class="notice-text">公告:本程序只作为测试使用,请勿瞎几把搞</text>
+</view>
+<view class="head card">
+  <image class="img" src='/images/icon-qdh.png' ></image>
+</view>
+<view class='body-content card margintop10'>
+  <view class="content">
+    <image class="content-img" src="/images/icon-1.png"></image>
+    <text class="content-text">当日销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+  <view class="content">
+    <image class="content-img" src="/images/icon-2.png"></image>
+    <text class="content-text">当月销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+  <view class="content">
+    <image class="content-img" src="/images/icon-3.png"></image>
+    <text class="content-text">累计销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+</view>
+<view class='body-content card margintop10'>
+  <view class="content">
+    <image class="content-img" src="/images/icon-4.png"></image>
+    <text class="content-text">团队日销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+  <view class="content">
+    <image class="content-img" src="/images/icon-5.png"></image>
+    <text class="content-text">团队月销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+  <view class="content">
+    <image class="content-img" src="/images/icon-6.png"></image>
+    <text class="content-text">团队累计销量</text>
+    <text class="content-text">150.00元</text>    
+  </view>
+</view>
+<button  class="card my-btn margintop10" bindtap='bindViewTap'>点击查看销量</button>
+<button  class="card my-btn margintop10" bindtap="checkAdward">查看奖金</button>
+
