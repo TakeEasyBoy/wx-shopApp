@@ -1,0 +1,64 @@
+<!--pages/pay/pay.wxml-->
+<!-- <scroll-view> -->
+<navigator url="/pages/address/address" class="pay-head card">
+  <text  style="color:red">添加地址</text>
+  <text>></text>
+</navigator>
+<view class="pay-head card">
+  <text>备注</text>
+  <input class="pay-input" type="text" maxlength='20' bindinput='getRemark' value="{{remark}}"></input>
+</view>
+<view class="pay-detail margintop10 card">
+  <view class="pay-good-title">商品信息</view>
+  <view class="pay-lists">
+    <image class="lists-img" src="/images/tutui.jpg"></image>
+    <view class="lists-text">
+      <text>特色糖醋五香兔头(只限四川,重庆地区)</text>
+      <view class="margintop10 lists-text-bottom">
+        <text class="price"> 15.00元/2只 </text>
+        <text> 1个 </text>
+      </view>
+    </view>
+  </view>
+  <view class="pay-lists">
+    <image class="lists-img" src="/images/tutui.jpg"></image>
+    <view class="lists-text">
+      <text>特色糖醋五香兔头(只限四川,重庆地区)</text>
+      <view class="margintop10 lists-text-bottom">
+        <text class="price"> 15.00元/2只 </text>
+        <text> 5个 </text>
+      </view>
+    </view>
+  </view>
+  <view class="pay-lists">
+    <image class="lists-img" src="/images/tutui.jpg"></image>
+    <view class="lists-text">
+      <text>特色糖醋五香兔头(只限四川,重庆地区)</text>
+      <view class="margintop10 lists-text-bottom">
+        <text class="price"> 15.00元/2只 </text>
+        <text> 5个 </text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="pay-post margintop10 card">
+  <text>选择快递</text>
+  <picker class="picker_post" value="{{index}}" bindchange="bindPickerChange" range="{{post_array}}">
+    <view class="picker">
+      当前选择：{{post_array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="pay-head card">
+  <text>注:跑腿仅限德阳市区内!!</text>
+</view>
+<!-- </scroll-view> -->
+ <view class="pay-footer margintop10 card">
+  <view>
+    <text class="price">￥:15.00</text>
+    <text>(包含邮费5元)</text>
+  </view>
+  <view>
+    <button type="primary" bindtap='submitBill'>提交订单</button>
+  </view>
+</view> 

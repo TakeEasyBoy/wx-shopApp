@@ -2,7 +2,7 @@
 <view class="margintop10 card">
   <view class="good-item" wx:key="{{id}}" wx:for-index="idx" wx:for="{{itemData}}">
    <view class="item-img">
-     <image class="sales-img" src='/images/icon-1.png'></image>
+     <image class="sales-img" src='/images/tutui.jpg'></image>
    </view>
     <view class="good-item-text">
       <text class="item-title">{{item.name}}</text>
@@ -16,4 +16,9 @@
     </view>
   </view>
 </view>
-<view>{{totalprice}}</view>
+<view class="carts" bind:touchstart='touchstartHandle'>
+  <image class="carts-img" src='/images/cart3.png'></image>
+  <text>￥:{{totalprice}}.00</text>
+  <navigator url="/pages/pay/pay?price={{totalprice}}" class="carts-bill" data-price="{{totalprice}}">去结算</navigator>
+  <view class="carts-badges">5</view>
+</view>

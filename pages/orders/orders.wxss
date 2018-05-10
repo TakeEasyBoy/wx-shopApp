@@ -9,6 +9,7 @@
 .item-img{
   height:80px;
   width: 20%;
+  padding-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column; 
+}
+.item-title-notice{
+  color:#999;
 }
 .item-title,.item-num{
   height: 30px;
@@ -49,4 +53,42 @@
 }
 .add-icon{
   background-color: #fdb900;
+}
+
+/*购物车  */
+.carts{
+  width: 200px;
+  height: 40px;
+  padding: 5px 10px;
+  display: flex;
+   justify-content: space-around; 
+  align-items: center;
+  line-height: 40px;
+  background-color: #fdb900;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  color:#fff;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+} 
+.carts-img{
+  width: 32px;
+  height: 32px;
+}
+.carts-bill{
+  align-content: flex-end;
+}
+.carts-badges{
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+  background-color: red;
+  color:#fff;
+  text-align: center;
+  position: fixed;
+  bottom: 46px;
+  right: 160px;
 }

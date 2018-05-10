@@ -44,6 +44,21 @@ Page({
    
   },
   /**
+   * 跳转支付
+   */
+  gotopay:function(e){
+    console.log(e.target.dataset.price)
+    wx.navigateTo({
+      url: `/pages/pay/pay?price=${e.target.dataset.price}`,
+    })
+  },
+  /**
+   * 触摸开始
+   */
+  touchstartHandle:function(e){
+    console.log(e)
+  },
+  /**
   * 减
   */
   decade: function(e) {
@@ -51,6 +66,10 @@ Page({
     let i = e.target.dataset.index  
     if (this.data.numbers[i] == 0) {
       this.data.numbers[i] = 0
+      this.setData({
+        numbers: this.data.numbers
+      })
+      return;
     }else{
       --this.data.numbers[i]  
     }

@@ -5,7 +5,9 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/sales/sales",
-    "pages/adward/adward"
+    "pages/adward/adward",
+    "pages/pay/pay",
+    "pages/address/address"
   ],
   "window": {
     "backgroundTextStyle": "light",

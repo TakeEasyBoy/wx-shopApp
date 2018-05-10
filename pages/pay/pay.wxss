@@ -1,0 +1,68 @@
+/* pages/pay/pay.wxss */
+.pay-head{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.pay-input{
+  height: 40px;
+  width: 250px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+  padding-left: 10px;
+}
+.pay-good-title{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.pay-lists{
+  height: 95px;
+  padding: 10px;
+  display: flex;
+   justify-content: flex-start; 
+  align-items: center;
+}
+.lists-img{
+  height: 70px;
+  width: 70px;
+}
+.lists-text{
+  width:75%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lists-text-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.pay-post{
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #eee;
+}
+.pay-post text,.picker_post{
+  height: 50px;
+  line-height: 50px;
+}
+.picker_post{
+  margin-left: 20px;
+}
+.pay-footer{
+  height: 50px;
+  line-height: 50px;
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  /* bottom: 0; */
+
+}
